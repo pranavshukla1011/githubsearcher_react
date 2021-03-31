@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
 // class UserItem extends Component {
 //   // state = {
 //   //   id: 'id',
@@ -42,7 +42,7 @@ import PropTypes from 'prop-types';
 // }
 
 //using stateless functional components
-const UserItem = ({user : {login, avatar_url, html_url}}) => {
+const UserItem = ({ user: { login, avatar_url, html_url } }) => {
   // const { login, avatar_url, html_url } = props.user;
 
   return (
@@ -55,14 +55,14 @@ const UserItem = ({user : {login, avatar_url, html_url}}) => {
       />
       <h3>{login}</h3>
       <div className=''>
-        <a
-          href={html_url}
+        <Link
+          to={`/user/${login}`}
           className='btn btn-dark btn-sm my-1'
-          target='_blank'
+          // target='_blank'
           rel='noreferrer'
         >
           More
-        </a>
+        </Link>
       </div>
     </div>
   );
