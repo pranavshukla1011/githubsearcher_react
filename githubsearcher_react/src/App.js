@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/layouts/Navbar';
 import Home from './components/pages/home';
+import NotFound from './components/pages/NotFound';
 import Alert from './components/layouts/alert';
 
 import About from './components/pages/about';
@@ -45,6 +46,8 @@ const App = () => {
               <Route exact path='/about' component={About}></Route>
 
               <Route exact path='/User/:login' component={User}></Route>
+
+              <Route component={NotFound}></Route>
             </Switch>
           </div>
         </div>
