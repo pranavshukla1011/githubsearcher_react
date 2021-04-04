@@ -18,13 +18,13 @@ import {
 let githubclientId;
 let githubclientSecret;
 
-if(process.env.NODE_ENV!== 'prodiction'){
-  githubclientId =  githubclientId
-  githubclientSecret = process.env.rocess.env.REACT_APP_GITHUB_CLIENT_SECRET
+if(process.env.NODE_ENV !== 'production'){
+  githubclientId =  process.env.REACT_APP_ID
+  githubclientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET
 }
 else{
   githubclientId = process.env.GITHUB_CLIENT_ID
-  githubclientSecret = process.env.rocess.env.GITHUB_CLIENT_SECRET
+  githubclientSecret = process.env.GITHUB_CLIENT_SECRET
 }
 
 const GithubState = (props) => {
