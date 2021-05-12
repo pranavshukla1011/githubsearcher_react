@@ -7,6 +7,8 @@
 A quick github profile lookup webapp using React and Github API.
 User can search and quickly loopup details about a github user without having to search through their whole profile.
 
+**Visit :** https://pranav-shukla.netlify.app/  to see all my projects.
+
 ## Dependencies used:
 
 - ReactJs, React Router
